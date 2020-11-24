@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main class="main-container">
+
+      <form class="search-bar">
+        <div>
+          <label for="seach-bar">
+            <a href="#"><i class="fas fa-search"></i></a>
+          </label>
+          <input type="text" id="seach-bar" name="search-bar" placeholder="Where are you going?">
+        </div>
+      </form>
+
+      <header class="header-container">
+        <a href="#" class="logo-container">
+          <i class="fab fa-airbnb"></i>
+          <div>airbnb</div>
+        </a>
+        <div class="account-info">
+          <a class="host-globe" href="https://www.airbnb.com/host/homes">Become a host</a>
+          <a class="host-globe" href="#">
+            <i class="fas fa-globe"></i>
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <a class="profile-menu" href="#">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-user-circle"></i>
+          </a>
+        </div>
+      </header>
+
+      <section class="explore">
+        <nav class="nav-container">
+          <a href="#">Places to stay</a>
+          <a href="#">Experiences</a>
+          <a href="https://www.airbnb.com/s/experiences/online">Online Experiences</a>
+        </nav>
+
+        <form class="main-search">
+          <div class="input-form">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Where are you going?">
+          </div>
+          <div class="line"></div>
+          <div class="input-form">
+            <label for="check-in">Check in</label>
+            <input type="date" id="check-in" name="check-in">
+          </div>
+          <div class="line"></div>
+          <div class="input-form">
+            <label for="check-out">Check out</label>
+            <input type="date" id="check-out" name="check-out">
+          </div>
+          <div class="line"></div>
+          <div class="input-form search">
+            <div class="guest-form">
+              <label for="guests">Guests</label>
+              <select name="guests" id="guests">
+                <option value="">Add guests</option>
+                <option value="1-guest">1 Guest</option>
+                <option value="2-guests">2 Guests</option>
+                <option value="3-guests">3 Guests</option>
+                <option value="4-guests">4 Guests</option>
+                <option value="5-guests">5 Guests</option>
+              </select>
+            </div>
+            <div class="little-search">
+              <a href="#" class="submit"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="full-search">
+              <a href="#" class="submit">
+                Search
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="hero-container">
+        <h1>Go Near</h1>
+        <a href="#">Explore nearby stays</a>
+      </section>
+
+      <footer class="footer-container">
+        <div class="footer-flex">
+          <a href="#" class="explore">
+            <i class="fas fa-search"></i>
+            <div>Explore</div>
+          </a>
+          <a href="#" class="saved">
+            <i class="far fa-heart"></i>
+            <div>Saved</div>
+          </a>
+          <a href="#" class="log-in">
+            <i class="fas fa-user-circle"></i>
+            <div>Log in</div>
+          </a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

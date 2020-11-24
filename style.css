@@ -1,0 +1,384 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+}
+
+main{
+  background-image: url(images/background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 10rem;
+}
+
+.search-bar{
+  display: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+
+header a{
+  padding: 0 1rem;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-container div{
+  padding-left: 0.25rem;
+}
+
+.logo-container i{
+  font-size: 2.5rem;
+}
+
+.account-info{
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.host-globe:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 0.6rem 0.75rem;
+  margin: 0 0.25rem;
+}
+
+.profile-menu{
+  background-color: white;
+  color: rgb(113, 113, 113);
+  border-radius: 25px;
+  padding: 0.5rem;
+  font-size: 20px;
+}
+
+.profile-menu i{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.nav-container a{
+  padding: 1rem;
+}
+
+.nav-container{
+  margin-top: -4.75rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 32px;
+  background-color: white;
+  width: 900px;
+  height: 65px;
+  align-items: center;
+}
+
+form div{
+  padding: 1rem 0.5rem 1rem 2rem;
+}
+
+form .input-form:hover{
+  background-color: rgb(235,235,235);
+  border-radius: 32px;
+  height: 65px;
+  padding: 0.9rem 0 1rem 2rem;
+}
+
+form div:hover input{
+  background-color: rgb(235,235,235);
+}
+
+form div:hover select{
+  background-color: rgb(235,235,235);
+}
+
+.little-search{
+  font-size: 1.25rem;
+  background-color: rgb(255, 56, 92);
+  padding: 1rem;
+  margin-right: 0.75rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-search:hover{
+  background-color: rgb(230 30 77);
+}
+
+form label{
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(34, 34, 34);
+}
+
+form input{
+  border: none;
+  color: rgb(133, 133, 133);
+}
+
+form select{
+  border: none;
+  color: rgb(133, 133, 133);
+}
+
+.line{
+  background-color: rgba(133, 133, 133, 0.3);
+  width: 0.05rem;
+  height: 2rem;
+  padding: 0;
+}
+
+form:hover .line{
+  display: none;
+}
+
+.full-search i{
+  padding: 0.5rem;
+}
+
+.full-search{
+  display: none;
+  font-size: 1rem;
+  background-color: rgb(255, 56, 92);
+  padding: 1rem;
+  margin-right: 0.75rem;
+  border-radius: 32px;
+  height:3rem;
+}
+
+.full-search a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1rem;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding-right: 0;
+}
+
+.guest-form{
+  padding: 0;
+}
+
+.search:hover{
+  padding-right: 0;
+}
+
+.search:hover .little-search{
+  display: none;
+}
+
+.search:hover .full-search{
+  display: block;
+}
+
+.hero-container h1{
+  color: white;
+  font-size: 108px;
+  line-height: 90px;
+  width: 20rem;
+  font-weight: bold;
+  margin: 5.5rem 0 1.5rem 5rem;
+}
+
+.hero-container a{
+  color: rgb(34, 34, 34);
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.45rem 1rem;
+  font-size: 15px;
+  margin-left: 5rem;
+}
+
+.footer-container{
+  display: none;
+}
+
+@media screen and (max-width: 1125px){
+  .logo-container div{
+    display: none;
+  }
+  
+  header{
+    padding: 2rem 1.5rem;
+  }
+
+  .account-info{
+    font-size: 14px;
+  }
+
+  .nav-container{
+    font-size: 14px;
+  }
+
+  .hero-container h1{
+    margin-left: 2.5rem;
+  }
+
+  .hero-container a{
+    margin-left: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .nav-container{
+    margin-top: -1rem;
+    font-size: 16px;
+  }
+
+  form{
+    width: 90%;
+  }
+
+  form input{
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+
+  form select{
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+
+  .hero-container h1{
+    font-size: 72px;
+    width: 200px;
+    line-height: 65px;
+    margin-top: 15vw;
+  }
+}
+
+@media screen and (max-width: 744px){
+  main{
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+  
+  header{
+    display: none;
+  }
+
+  .nav-container{
+    display: none;
+  }
+
+  .main-search{
+    display: none;
+  }
+
+  .search-bar{
+    display: block;
+    height: 45px;
+    width: 93%;
+  }
+
+  .search-bar div{
+    display: flex;
+    padding: 0.8rem 0 0.8rem 1.25rem;
+  }
+
+  .search-bar i{
+    color: black;
+    font-size: 16px;
+    padding-right: 1rem;
+  }
+
+  .search-bar input{
+    font-size: 16px;
+    width: 200px;
+  }
+
+  .search-bar:hover input{
+    background-color:white;
+  }
+
+  .hero-container h1{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+  }
+
+  .hero-container a{
+    margin-left: 1.5rem;
+  }
+
+  .hero-container{
+    margin-bottom: 26rem;
+  }
+
+  .footer-container{
+    display: block;
+    background-color: white;
+  }
+
+  .footer-container a{
+    color: black;
+    padding: 1rem 2.5rem;
+  }
+
+  .footer-flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-flex div{
+    font-size: 10px;
+    color: rgb(176, 176, 176);
+  }
+
+  .footer-flex i{
+    font-size: 25px;
+    color: rgb(176, 176, 176);
+    padding-bottom: 0.25rem;
+  }
+
+  .explore i{
+    color: rgb(255, 56, 92);
+  }
+
+  .explore div{
+    color: rgb(34, 34, 34)
+  }
+
+  .footer-flex a:hover i{
+    color: rgb(255, 56, 92);
+  }
+
+  .footer-flex a:hover div{
+    color: rgb(34, 34, 34)
+  }
+}
